@@ -1,6 +1,7 @@
     hlwrap.exe sqlite3.exe personas.sqlite3
 
     .read create_database.sql
+    insert into persona values (1,"Paco",50);
 
     mvn spring-boot:run
 
