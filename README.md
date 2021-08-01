@@ -2,3 +2,5 @@
 
     .read create_database.sql
 
+    mvn spring-boot:run
+
