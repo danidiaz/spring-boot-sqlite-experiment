@@ -7,8 +7,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class DatitosController {
 
-    @GetMapping(path = "/datitos")
-    @ResponseBody String datitosEndpoint() {
-        return "hola";
+    private final PersonService service;
+
+    public DatitosController(PersonService service) {
+        this.service = service;
+    }
+
+    @GetMapping(path = "/datitos/person")
+    @ResponseBody String personEndpoint() {
+        return service.getPersonName();
     }
 }
