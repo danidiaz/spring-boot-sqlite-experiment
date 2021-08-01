@@ -54,4 +54,5 @@
 
     The persistence.xml configuration file is used to configure a given JPA Persistence Unit. The Persistence Unit defines all the metadata required to bootstrap an EntityManagerFactory, like entity mappings, data source, and transaction settings, as well as JPA provider configuration properties.
 
+[paging and sorting repository](https://howtodoinjava.com/spring-boot2/pagination-sorting-example/)
 
